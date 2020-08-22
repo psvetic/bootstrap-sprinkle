@@ -1,0 +1,221 @@
+body {
+    font-family: 'Architects daughter';
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+  }
+
+.center--text {
+    display: flex;
+    align-items: center;
+}
+
+.galerija {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.galerija > img {
+    margin-right: 25px;
+}
+
+li {
+    font-size: 24px;
+}
+
+.home--container {
+    font-size: 24px;
+    justify-content: center;
+}
+
+.usluge--container {
+    font-size: 24px;
+    justify-content: center;
+}
+
+.about--container {
+    font-size: 24px;
+}
+
+.form--container {
+    background-color: aliceblue;
+}
+
+.reviews--container {
+    justify-content: center;
+}
+.review--container {
+    background-color: #ce8383;
+}
+.review--container2 {
+    background-color: #ebebeb;
+}
+
+.footer--content a {
+    color: black;
+}
+
+.footer--copyright {
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
+
+.usluge--main {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.card--title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.jumbotron--custom {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.jumbotron--about {
+    margin-bottom: 0;
+    margin-top: 0 !important;
+}
+
+.home--first {
+    background-color: #D36135;
+}
+.home--second {
+    background-color: #7FB069;
+}
+.home--third {
+    background-color: #ECE4B7;
+}
+.home--fourth {
+    background-color: #E6AA68;
+}
+.usluge--first {
+    background-color: #7FB069;
+}
+.usluge--second {
+    background-color: #ECE4B7;
+}
+.usluge--third {
+    background-color: #D36135;
+}
+.about--color {
+    background-color: #ECE4B7;
+}
+
+.animated-button {
+    padding: 10px;
+}
+
+.navbar--res .navbar--coll ul li {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1380px) {
+    .galerija > img {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .galerija > img {
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .navbar--to-hide {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .navbar--res {
+        display: none;
+    }
+}
+
+
+/* animated button */
+
+.animated-icon {
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+.animated-icon span {
+background: #e65100;
+}
+
+.animated-icon span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon span:nth-child(2) {
+top: 10px;
+}
+
+.animated-icon span:nth-child(3) {
+top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+top: 11px;
+-webkit-transform: rotate(135deg);
+-moz-transform: rotate(135deg);
+-o-transform: rotate(135deg);
+transform: rotate(135deg);
+}
+
+.animated-icon.open span:nth-child(2) {
+opacity: 0;
+left: -60px;
+}
+
+.animated-icon.open span:nth-child(3) {
+top: 11px;
+-webkit-transform: rotate(-135deg);
+-moz-transform: rotate(-135deg);
+-o-transform: rotate(-135deg);
+transform: rotate(-135deg);
+}
