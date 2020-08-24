@@ -7,9 +7,15 @@ html {
     min-height: 100vh;
   }
 
-.center--text {
+.header--text {
     display: flex;
     align-items: center;
+    text-align: center;
+}
+@media only screen and (max-width: 992px) {
+    .header--res {
+        justify-content: center;
+    }
 }
 
 .galerija {
