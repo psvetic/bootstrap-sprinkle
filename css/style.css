@@ -48,6 +48,13 @@ li {
 .form--container {
     background-color: aliceblue;
 }
+@media only screen and (max-width: 575px) {
+    .form--container {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: auto;
+    }
+}
 
 .reviews--container {
     justify-content: center;
