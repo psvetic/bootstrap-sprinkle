@@ -27,6 +27,12 @@ html {
     margin-right: 25px;
 }
 
+.about--video {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 li {
     font-size: 24px;
 }
